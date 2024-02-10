@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Expense Tracker App</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <style>
+    h2 {
+      color: rgb(235, 33, 33);
+      text-align: center;
+    }
+    body {
+      background-image: url(bg11.png);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h2 class="text">Expense tracker app</h2>
+      <form action="" id="form">
+        <div class="form-group">
+          <label for="amount">Choose Expense Amount:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="amt"
+            placeholder="Choose Expense Amount:"
+            name="amount"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Choose Description:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="des"
+            placeholder="Choose Description:"
+            name="description"
+          />
+        </div>
+        <div class="form-group" class="form-control">
+          <label for="category">Choose a category:</label>
+          <select name="category" id="category">
+            <option value="Entertainment">Entertainment</option>
+            <option value="Transportation">Transportation</option>
+            <option value="Food">Food</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary" id="btns">
+          Add Expense
+        </button>
+      </form>
+      <div>
+        <ul id="ul"></ul>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"></script>
+    <script src="expenseTracker.js"></script>
+  </body>
+</html>
